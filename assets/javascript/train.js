@@ -43,10 +43,35 @@ var firebaseConfig = {
 
 
     return false;
+  });
+
+  database.ref().on("child_added", function(childSnapshot, prevChildKey) {
+
+    console.log(childSnapshot.val());
+
+    var trainName = childSnapshot.val().name;
+    var destination = childSnapshot.val().dest;
+    var firstTrain = childSnapshot.val().first;
+    var frequency = childSnapshot.val().freq;
+
+    console.log(trainName);
+    console.log(destination);
+    console.log(firstTrain);
+    console.log(frequency);
 
 
 
-  })
+
+
+  });
+  
+  
+  
+  
+  
+
+
+
   
   
 
