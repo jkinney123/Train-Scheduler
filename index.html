@@ -35,19 +35,52 @@
                                     <th>Minutes Away</th>
                                 </tr>
                             </thead>
+                            <tbody>
+
+                            </tbody>
                         </table>
                     </div>
-
-
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <h3 class="panel-title bg">
+                        <strong>Add Train</strong>
+                    </h3>
+                    <div class="panel-body">
+
+                        <form>
+                            <div class="form-group">
+                                <label>Train Name</label>
+                                <input class="form-control" id="t-name" type="text">
+                            </div>
+                            <div class="form-group">
+                                    <label>Destination</label>
+                                    <input class="form-control" id="t-destination" type="text">
+                             </div>
+                             <div class="form-group">
+                                    <label>First train Time (HH:mm - military time)</label>
+                                    <input class="form-control" id="firstT-time" type="text">
+                            </div>
+                            <div class="form-group">
+                                    <label>Frequency (min)</label>
+                                    <input class="form-control" id="t-frequency" type="text">
+                            </div>
+                            <button type="submit" id="newTrain" class="btn btn-primary"> Submit</button>
+                            <br>
+                            <br>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
-    
-    
-    
+   
     
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
     <script type="text/javascript" src="assets/javascript/train.js"></script>
